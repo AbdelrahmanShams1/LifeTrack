@@ -6,6 +6,7 @@ import shopping from "./slices/shoppingSlice.jsx";
 import habit from "./slices/habitSlice.jsx";
 import reminders from "./slices/remindersSlice.jsx";
 import expenses from "./slices/expenseSlice.jsx";
+import weekly from "./slices/weeklyScheduleSlice.jsx";
 
 const store = configureStore({
     reducer: {
@@ -16,6 +17,7 @@ const store = configureStore({
         habit: habit,
         reminders: reminders,
         expense: expenses,
+        weekly: weekly,
     },
     devTools: process.env.NODE_ENV !== "production"
 })

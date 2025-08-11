@@ -15,6 +15,7 @@ import ShoppingList from "./components/ShoppingList";
 import HabitTracker from "./components/HabitTracker";
 import Reminders from "./components/Reminders";
 import ExpenseTracker from "./components/ExpenseTracker";
+import WeeklySchedule from "./components/WeeklySchedule";
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -75,6 +76,14 @@ const App = () => {
           element={
             <ProtectedRoute>
               <ExpenseTracker />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/weekly"
+          element={
+            <ProtectedRoute>
+              <WeeklySchedule />
             </ProtectedRoute>
           }
         />

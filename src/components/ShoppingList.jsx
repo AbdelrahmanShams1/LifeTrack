@@ -188,7 +188,6 @@ const ShoppingList = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-100 p-2 sm:p-4 md:p-6 lg:p-8">
       <div className="max-w-6xl mx-auto bg-white shadow-xl rounded-xl overflow-hidden relative">
-        {/* زر العودة - responsive */}
         <div className="absolute top-2 left-2 sm:top-4 sm:left-4 z-10">
           <Link
             to="/dashboard"
@@ -199,7 +198,6 @@ const ShoppingList = () => {
           </Link>
         </div>
 
-        {/* Header - responsive */}
         <div className="bg-green-600 p-4 sm:p-6 text-white pt-12 sm:pt-6">
           <h1 className="text-xl sm:text-2xl md:text-3xl font-bold text-center flex items-center justify-center gap-2 sm:gap-3">
             <ShoppingCart className="w-6 h-6 sm:w-8 sm:h-8" />
@@ -228,7 +226,6 @@ const ShoppingList = () => {
         </div>
 
         <div className="p-3 sm:p-4 md:p-6">
-          {/* البحث والتصفية - responsive */}
           <div className="mb-4 sm:mb-6 flex flex-col sm:flex-row gap-3 sm:gap-4">
             <div className="flex-1">
               <input
@@ -252,14 +249,12 @@ const ShoppingList = () => {
             </div>
           </div>
 
-          {/* نموذج إضافة عنصر جديد - responsive */}
           <div className="mb-6 sm:mb-8 bg-gray-50 rounded-lg p-3 sm:p-4">
             <h2 className="text-lg sm:text-xl font-semibold text-gray-800 mb-3 sm:mb-4 flex items-center gap-2">
               <Plus className="w-4 h-4 sm:w-5 sm:h-5" />
               إضافة عنصر جديد
             </h2>
             <form onSubmit={handleAddItem} className="space-y-3 sm:space-y-4">
-              {/* الحقول الأساسية */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
                 <div className="sm:col-span-2 lg:col-span-2">
                   <input
@@ -302,7 +297,6 @@ const ShoppingList = () => {
                 </div>
               </div>
 
-              {/* رفع صورة */}
               <div>
                 <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-2">
                   صورة المنتج (اختياري)
@@ -364,7 +358,6 @@ const ShoppingList = () => {
             </form>
           </div>
 
-          {/* قائمة العناصر - responsive */}
           {!filteredItems || filteredItems.length === 0 ? (
             <div className="text-center py-8 sm:py-10">
               <div className="text-gray-400 text-3xl sm:text-4xl md:text-5xl mb-4">
@@ -440,7 +433,6 @@ const ShoppingList = () => {
                         </div>
                       </div>
 
-                      {/* رفع صورة التعديل */}
                       <div>
                         <label className="block text-xs sm:text-sm font-medium text-gray-700 mb-2">
                           صورة المنتج
@@ -509,7 +501,6 @@ const ShoppingList = () => {
                     </form>
                   ) : (
                     <div className="flex flex-col gap-3">
-                      {/* الجزء الرئيسي */}
                       <div className="flex items-start gap-3">
                         <button
                           onClick={() =>
@@ -580,7 +571,6 @@ const ShoppingList = () => {
                         </div>
                       </div>
 
-                      {/* الصورة */}
                       {item.image && (
                         <div className="mt-2">
                           <a
