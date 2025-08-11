@@ -47,12 +47,7 @@ function Home() {
               color="text-indigo-800"
               bg="from-blue-50 to-indigo-100"
             />
-            <Feature
-              icon={<Target className="text-purple-600" />}
-              label="الأهداف"
-              color="text-purple-800"
-              bg="from-indigo-50 to-purple-100"
-            />
+
             <Feature
               icon={<ShoppingCart className="text-pink-600" />}
               label="المشتريات"

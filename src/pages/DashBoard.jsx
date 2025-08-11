@@ -17,6 +17,7 @@ const features = [
   { icon: "🧠", title: "متابع العادات", path: "/habit" },
   { icon: "⏰", title: "التذكيرات", path: "/reminders" },
   { icon: "🧾", title: "متابع المصاريف", path: "/expenses" },
+  { icon: "📅", title: "جدولة الاسبوع", path: "/weekly" },
 ];
 
 const Dashboard = () => {
